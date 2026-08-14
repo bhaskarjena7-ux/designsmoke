@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media(max-width:768px){
     .hamburger{
     display: block;
@@ -146,3 +147,153 @@
 
 }
 }
+=======
+@media(max-width:768px){
+    .hamburger{
+    display: block;
+    cursor: pointer;
+    }
+   .menu{
+    display: none;
+   }
+   .nav{
+    padding: 0px 20px;
+   }
+   .hero{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    align-items: center;
+    gap: 20px;
+   }
+   .about{
+    display: flex;
+    flex-direction: column;
+    padding: 36px 40px;
+    align-items: center;
+    justify-content: center;
+   }
+   .aboutbutton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .work-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .work-process{
+     padding: 20px 40px;
+     
+   }
+   footer{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+   }
+   .ftr_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   footer{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+   }
+   .clm1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   .clm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .clm3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   .input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   }
+
+   .create-something{
+    padding: 20px 40px;
+   }
+
+   h2, p{
+    text-align: justify;
+   }
+   .blog{
+    padding: 20px 40px ;
+   }
+   h1{
+    text-align: center;
+   }
+
+   .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ftr_3{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .ftr_3 p{
+    text-align: left ;
+    text-align: center;
+    
+  }
+  .ftr_1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-me{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+  .action{
+    padding: 20px 40px;
+  }
+  .process span{
+    transform: rotate(90deg);
+  }
+  .try{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+  }
+  .contact{
+    padding: 10px 0px;
+  }
+  .contact-form{
+    
+    padding: 18px 10px;
+  }
+  .contact-details{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    
+
+}
+}
+>>>>>>> 71251a09e2c9f72faf6f4d964d55b4b0c87402fe
