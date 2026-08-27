@@ -1,5 +1,13 @@
 
 @media(max-width:768px){
+  .logo img{
+    width: 100px;
+    height: fit-content;
+    display: block;
+  }
+    nav{
+      padding: 0px 20px;
+    }
     .hamburger{
     display: block;
     cursor: pointer;
@@ -7,13 +15,17 @@
    .menu{
     display: none;
    }
-   .nav{
-    padding: 0px 20px;
+   .menu-btn{
+    display: none;
    }
+   .menu-toggle{
+    display: block;
+   }
+  
    .hero{
     display: flex;
     flex-direction: column;
-    padding: 20px 40px;
+    padding: 20px 20px;
     align-items: center;
     gap: 20px;
    }
@@ -85,22 +97,15 @@
     padding: 20px 40px;
    }
 
-   h2, p{
+   p{
     text-align: justify;
    }
    .blog{
     padding: 20px 40px ;
    }
-   h1{
-    text-align: center;
-   }
+   
 
-   .text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+   
   .ftr_3{
     display: flex;
     flex-direction: column;
