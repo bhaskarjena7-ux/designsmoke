@@ -23,7 +23,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: var(--font-color);
+  background-color: var(--heading);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 nav{
@@ -43,26 +44,9 @@ nav{
 
 }
 /* Hamburger button */
-.menu-toggle {
-  display: none;
-  width: 40px;
-  height: 40px;
-  padding: 4px;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-}
 
-.menu-toggle span {
-  display: block;
-  width: 26px;
-  height: 2px;
-  margin: 6px auto;
-  background-color: var(--card-bg);
-  border-radius: 2px;
-  transition: transform 0.3s ease,
-              opacity 0.3s ease;
-}
+
+
 
 /* Hamburger button */
 

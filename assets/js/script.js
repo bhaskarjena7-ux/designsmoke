@@ -1,17 +1,10 @@
-const menuButton = document.getElementById("menuButton");
-const navLinks = document.getElementById("navLinks");
 
-menuButton.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-    menuButton.classList.toggle("active");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
 
-    const menuIsOpen = navLinks.classList.contains("active");
+    menuToggle.addEventListener("click", function () {
+        const menuIsOpen = navMenu.classList.toggle("active");
 
-    menuButton.setAttribute("aria-expanded", menuIsOpen);
-    menuButton.setAttribute(
-        "aria-label",
-        menuIsOpen
-            ? "Close navigation menu"
-            : "Open navigation menu"
-    );
-});
+        menuToggle.classList.toggle("active");
+        menuToggle.setAttribute("aria-expanded", menuIsOpen);
+    });

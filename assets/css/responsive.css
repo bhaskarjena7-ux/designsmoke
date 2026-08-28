@@ -29,6 +29,14 @@
     align-items: center;
     gap: 20px;
    }
+   .herobtn{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
    .about{
     display: flex;
     flex-direction: column;
@@ -154,5 +162,80 @@
 .process-work{
   padding: 10px 0px;
 }
+
+
+
+
+.menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu_name {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 26px;
+        height: 3px;
+        background-color: #111;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Hamburger becomes an X */
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
 }
 
