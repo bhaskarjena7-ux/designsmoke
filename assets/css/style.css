@@ -1329,13 +1329,52 @@ footer li a:hover{
 
 
 
+.work-process-show{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 40px 100px;
+    
+}
+.homepage-workprocess{
 
+    padding: 40px 160px;
+}
+.home-page-workprocess-header{
+    padding: 40px 0px;
+    max-width: 600px;
+}
 
+.home-page-workprocess-header h2{
+    padding: 30px 0px;
+    color: var(--primary);
+    
+}
+.work-show{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.work-show span{
+    font-size: 4rem;
+}
+.work-show-body{
+    display: none;
+}
+.work-show:hover .work-show-body .material-symbols-outlined{
+    display: block;
+    
 
+}
+.work-show:hover .material-symbols-outlined{
+    display: none;
+    
 
-
-
-
+}
+.work-show:hover{
+    flex: 2;
+}
 
 
 
