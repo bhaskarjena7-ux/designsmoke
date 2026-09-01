@@ -1332,51 +1332,75 @@ footer li a:hover{
 .work-process-show{
     display: flex;
     gap: 20px;
-    align-items: center;
-    padding: 40px 100px;
+    align-items: stretch;
+    
     
 }
 .homepage-workprocess{
-
-    padding: 40px 160px;
-}
-.home-page-workprocess-header{
-    padding: 40px 0px;
-    max-width: 600px;
-}
-
-.home-page-workprocess-header h2{
-    padding: 30px 0px;
-    color: var(--primary);
     
+    padding: 40px 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
 }
 .work-show{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    border-radius: 10px;
+
+
+
+    flex: 1 1 0;
+    transition: all 0.5s ease;
+    
+    
+    position: relative;
+    
 }
-.work-show span{
-    font-size: 4rem;
+.work-show-footer-icon{
+    font-size: 60px;
+    position: absolute;
+    bottom: 50px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.homepage-workprocess h2{
+    padding: 20px 0px;
+}
+
+.work-show:hover{
+    flex: 1.2 1 0;
+    background-color: var(--primary-color);
+    color: var(--font-color);
 }
 .work-show-body{
-    display: none;
-}
-.work-show:hover .work-show-body .material-symbols-outlined{
-    display: block;
-    
+    visibility: hidden;
 
 }
-.work-show:hover .material-symbols-outlined{
-    display: none;
-    
 
+.work-show:hover .work-show-body{
+    visibility: visible;
 }
-.work-show:hover{
-    flex: 2;
+.work-show:hover .work-show-footer-icon{
+    visibility: hidden;
 }
-
-
-
-
-
+.icon-process{
+    width: 80px;
+    height:80px;
+    background-color: white;
+    border-radius: 5px;
+}
+.work-show-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+}

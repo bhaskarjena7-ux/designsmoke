@@ -239,13 +239,45 @@
     }
 
 
-
-
-
-
-
-
-
-
 }
 
+
+
+/* Mobile horizontal scrolling */
+@media (max-width: 768px) {
+    .work-process-show {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding: 20px;
+
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .work-show {
+        flex: 0 0 280px;
+        scroll-snap-align: start;
+    }
+
+    /* Disable width expansion on touch devices */
+    .work-show:hover {
+        flex-basis: 280px;
+    }
+
+    /* Show the description because mobile has no reliable hover */
+    .pro-footer {
+        display: flex;
+    }
+    .homepage-workprocess{
+      padding: 0px 10px;
+    }
+    .work-show-body{
+    visibility: visible;
+
+    }
+    .work-show-footer-icon{
+    visibility: hidden;
+    }
+}
