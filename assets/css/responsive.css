@@ -293,7 +293,7 @@
     }
     .Motion-graphics{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 20px;
         padding: 10px 20px;
@@ -307,7 +307,7 @@
     }
     .graphics-design{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 20px;
         padding: 10px 20px;
