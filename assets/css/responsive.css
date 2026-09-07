@@ -168,7 +168,9 @@
     flex-direction: column;
 }
 
-
+.pencil-hero{
+  padding: 10px 20px;
+}
 
 
 
@@ -261,11 +263,11 @@
         scroll-snap-align: start;
     }
 
-    /* Disable width expansion on touch devices */
+    /* Disable width expansion on touch devices 
     .work-show:hover {
         flex-basis: 280px;
     }
-
+    */
     /* Show the description because mobile has no reliable hover */
     .pro-footer {
         display: flex;
@@ -286,28 +288,28 @@
 @media (max-width: 768px) {
     .UI-UX_Design{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 20px;
         padding: 10px 20px;
     }
     .Motion-graphics{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         gap: 20px;
         padding: 10px 20px;
     }
     .pencil_Design{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 20px;
         padding: 10px 20px;
     }
     .graphics-design{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         gap: 20px;
         padding: 10px 20px;
