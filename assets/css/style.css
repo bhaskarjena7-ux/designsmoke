@@ -315,11 +315,14 @@ button:hover{
     padding: 40px 140px; 
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 60px;
     margin: 40px 0px;
     background-color: var(--primary);
     color: var(--font-color);
+}
+.create-text{
+    max-width: 900px;
 }
 .skill{
     display: flex;
@@ -560,24 +563,50 @@ footer li a:hover{
 
 }
 .portfolio-hero{
-    position: relative;
     width: 100%;
-    height: calc(100vh - 100px);
-    overflow: hidden;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+
+    padding: 20px, 120px;
+
+
+
+    background-image: 
+    
+    linear-gradient(to right, rgba(0, 0, 0, .9) 0%, rgba(0, 0, 0, 0) 100%),
+    url(../image/portfolio-hero.png);
+
+
+    display: flex;
+    align-items: center;
+    
+
+    padding-inline: clamp(20px, 8vw, 130px);
+   
     
 }
 .portfolio-hero-text{
-    position: absolute;
+  
     z-index: 1;
     color: white;
+    max-width: 600px;
 
 
-    left: 140px;
-    top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    
+
+
+    
 }
 .portfolio-hero-text h1{
-    font-size: 5rem;
+    font-size: clamp(3rem, 4vw + 1rem, 5rem);
+    line-height: 1;
 }
 
 .picture-icon{
@@ -1367,15 +1396,18 @@ footer li a:hover{
 }
 .work-show{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
     gap: 20px;
     flex-direction: column;
     padding: 20px;
-    background-color: var(--secondary-color);
-    color: var(--font-color);
+    background-color: var(--heading);
+    color: var(--card-bg);
     border-radius: 10px;
 
+
+
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
 
     flex: 1 1 0;
@@ -1384,6 +1416,13 @@ footer li a:hover{
     
     position: relative;
     
+}
+.work-show:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background-color:var(--card-bg);
+    color: var(--heading);
 }
 .work-show-footer-icon{
     font-size: 60px;
@@ -1409,11 +1448,4 @@ footer li a:hover{
 .icon-process img{
     width:50px;
     height: auto;
-}
-.work-show-head{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap : 10px;
 }
