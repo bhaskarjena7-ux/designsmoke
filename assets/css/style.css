@@ -1376,7 +1376,7 @@ footer li a:hover{
     display: flex;
     gap: 20px;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: center;
     
     
     
